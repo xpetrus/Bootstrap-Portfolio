@@ -1,13 +1,15 @@
 <!doctype html>
 <html>
     <head>
-        <title>Bootstrap Portfolio</title>
+        <title>The Portfolio</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <style>
             .portName{
                 background-color: #4aaaa5;
                 margin-left: 12%;
+                margin-top: -8px;
+                margin-bottom:-8px;
                 padding-left:5%;
                 padding-right:5%;
                 padding-bottom:2%;
@@ -25,34 +27,73 @@
             }
             .navbar{
                 margin:auto;
+                border-bottom: solid gray 1px; 
             }
             .naviLinks{
                 padding-left:45%;
             }
 
             .aboutMe{
-                width:800px;
+                width:600px;
                 border:solid grey 1px;
                 padding-left: 4%;
                 padding-right: 4%;
                 padding-bottom: 5%;
                 margin-top: 5%;
+                background-color:white;
+                margin-left:12%;
 
                 
             }
             .contentHeader{
                 
-                margin-top:20px;
+                margin-top:25px;
+                margin-bottom: 20px;
                 font-family: 'Georgia', Times, Times New Roman, serif;
                 color: #4aaaa5;
                 font-weight: bolder;
+                font-size: 30px;
+                
             }
             .prof{
                 float: left;
                 margin-right: 20px;
                 
             }
+            hr{
+                color:lightgray;
+                height:2px;
+                background-color: lightgray;
+            }
+            body{
+                background-image: url("images/hypnotize.png");
+                color: gray;
+            }
+            footer{
+                background-color:gray;
+                color:white;
+                font-size: 10px;
+                border-top: #4aaaa5 solid 4px;
+                position: fixed;
+                
+                bottom:0;
+                width:100%;
+            }
+            .message{
+                width: 525px;
+            }
+            input{
+                width: 525px;
+            }
 
+            .submit{
+                background-color:#4aaaa5;
+                color:white ;
+            }
+            .project{
+                margin-right:10px;
+                margin-bottom:10px;
+            }
 
 
         </style>
@@ -68,14 +109,14 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto naviLinks">
                         <li class="nav-item">
-                          <a class="nav-link" href="#">About </a>
+                          <a class="nav-link" href="index.html">About </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Portfolio</a>
+                          <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Contact</a>
+                          <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                       </ul>
 
@@ -86,21 +127,51 @@
 
             <div class="container aboutMe">
                 <div class="row">
-                    <div class="column-md-8">
-                        <h1 class="contentHeader">About Me</h1>
+                    <div class="column-xs-6">
+                        <h1 class="contentHeader">My Portfolio</h1>
                         <hr>
-                        <img src="http://placehold.it/100x100" class="prof">
-                        <p class="bio">My name is Peter, I am 22 years old. I live in New Jersey. I recently graduated from Rutgers Univeristy
-                             with a major in Information Technology and an minor in Public Health.</p>
+                        
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img class = "project" src="http://placehold.it/200x150">
 
-                        <p class="bio"> I have a great interest in technology and its profound impacts on human life and society. 
-                                I desire to learn a great deal more about how to interact with new and interesting technologies as well as how they 
-                                can be used to enhance everyday life.
-                        </p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img class = "project" src="http://placehold.it/200x150">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                        <img class = "project" src="http://placehold.it/200x150">
+
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <img class = "project" src="http://placehold.it/200x150">
+                                </div>
+                                
+                            </div>
+
+                            <div class="row">
+                                    <div class="col-xs-4">
+                                            <img class = "project" src="http://placehold.it/200x150">
+    
+                                        </div>
+
+                                    
+                                </div>
+
+                        </div>
+                        
 
                     </div>
                 </div>
             </div>
+
+            <footer class="page-footer font-small blue">
+                <div class="footer-copyright text-center py-3">© 2018 Copyright
+                </div>
+            </footer>
 
 
 
